@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Clicker Premium</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Clicker Premium</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <!-- document grid container -->
   <main class="doc-container">
+    <!-- document header -->
     <header class="doc-topic">
       <h1 class="topic-text">Cat Clicker Premium</h1>
     </header>
-      <aside class="sidebar">
-        <header class="sidebar-topic">
-          <h2 class="sidebar-topic-text">Select Cat</h2>
-        </header>
-        <ul class="cat-menu"></ul>
-      </aside>
-      <section class="cat-render-area">
-        <fieldset class="cat-display-area">
-          <legend class="cat-clicks"></legend>
-          <h3 class="cat-display-name"></h3>
-          <div class="cat-container"></div>
-        </fieldset>
-      </section>
+    <!-- sidebar to display cat names -->
+    <aside class="sidebar">
+      <!-- sidebar header -->
+      <header class="sidebar-topic">
+        <h2 class="sidebar-topic-text">Select Cat</h2>
+      </header>
+      <!-- sidebar menu to display cat names -->
+      <ul class="cat-menu"></ul>
+    </aside>
+    <!-- cat render container -->
+    <section class="cat-render-area">
+      <!-- cat display area to show cat name, clicks, picture -->
+      <fieldset class="cat-display-area">
+        <legend class="cat-clicks"></legend>
+        <h3 class="cat-display-name"></h3>
+        <div class="cat-container"></div>
+      </fieldset>
+    </section>
+    <!-- document footer -->
     <footer class="doc-note">
-      <p>Grow with Google Scholarship - Udacity **2018**</p>
+      <p class="note-text">Grow with Google Scholarship - Udacity **2018**</p>
     </footer>
   </main>
 </body>
+
+<!-- add scripts here -->
 <script src="jquery.js"></script>
 <script src="app.js"></script>
+
 </html>

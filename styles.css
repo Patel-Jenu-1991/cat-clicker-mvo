@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Orbitron|Rye|Peralta|Ubuntu+Mono|Concert+One');
+@import url("https://fonts.googleapis.com/css?family=Orbitron|Rye|Peralta|Ubuntu+Mono|Concert+One");
 
 *,
 *:after,
@@ -15,7 +15,8 @@ body {
   height: 100%;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -25,10 +26,11 @@ html, body {
 .doc-topic {
   border: 1px solid rgb(0, 0, 0);
   grid-area: header;
+  margin-bottom: 1em;
 }
 
 .doc-topic .topic-text {
-  font-family: 'Rye', sans-serif, serif;
+  font-family: "Rye", sans-serif, serif;
   font-size: 4em;
   text-align: center;
   text-shadow: 2px 2px rgb(146, 148, 138);
@@ -49,7 +51,7 @@ aside.sidebar {
 }
 
 .sidebar-topic .sidebar-topic-text {
-  font-family: 'Concert One', monospace, sans-serif, serif;
+  font-family: "Concert One", monospace, sans-serif, serif;
   font-size: 2.8em;
   letter-spacing: 5px;
   padding: 0;
@@ -62,7 +64,7 @@ aside.sidebar {
 
 .cat-menu .cat-name {
   display: block;
-  font-family: 'Peralta', sans-serif, serif;
+  font-family: "Peralta", sans-serif, serif;
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 4px;
@@ -94,7 +96,7 @@ aside.sidebar {
 .cat-display-area .cat-clicks {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 80px;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: "Ubuntu Mono", monospace;
   font-size: 1.9em;
   font-weight: bold;
   margin-left: 7em;
@@ -103,7 +105,7 @@ aside.sidebar {
 }
 
 .cat-display-area .cat-display-name {
-  font-family: 'Concert One', monospace, sans-serif, serif;
+  font-family: "Concert One", monospace, sans-serif, serif;
   font-size: 2.5em;
   letter-spacing: 2px;
   text-align: center;
@@ -126,10 +128,11 @@ aside.sidebar {
 .doc-note {
   border: 1px solid rgb(0, 0, 0);
   grid-area: footer;
+  margin-top: 1em;
 }
 
-.doc-note p {
-  font-family: 'Orbitron', monospace, sans-serif, serif;
+.doc-note .note-text {
+  font-family: "Orbitron", monospace, sans-serif, serif;
   font-weight: bold;
   font-size: 1em;
   letter-spacing: 2px;
@@ -141,11 +144,11 @@ aside.sidebar {
 .doc-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 78.8% auto;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
-    'header header header header'
-    'menu right right right'
-    'footer footer footer footer';
+    "header header header header"
+    "menu right right right"
+    "footer footer footer footer";
   grid-gap: 10px;
   padding: 10px;
 }
