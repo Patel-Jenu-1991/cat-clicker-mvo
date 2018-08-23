@@ -2,42 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cat Clicker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Clicker Premium</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div id="catlist">
-		<button id='button1'>cat 1</button>
-		<button id='button2'>cat 2</button>
-		<button id='button3'>cat 3</button>
-		<button id='button4'>cat 4</button>
-		<button id='button5'>cat 5</button>
-	</div>
-	<div class="cat" id="cat1">
-		<span class="counter">0</span> clicks
-		<br>
-   		<img class="clicker" src="cat_picture1.jpg">
-   	</div>
-   	<div class="cat" id="cat2">
-		<span class="counter">0</span> clicks
-		<br>
-   		<img class="clicker" src="cat_picture2.jpeg">
-   	</div>
-   	<div class="cat" id="cat3">
-		<span class="counter">0</span> clicks
-		<br>
-   		<img class="clicker" src="cat_picture3.jpeg">
-   	</div>
-   	<div class="cat" id="cat4">
-		<span class="counter">0</span> clicks
-		<br>
-   		<img class="clicker" src="cat_picture4.jpeg">
-   	</div>
-   	<div class="cat" id="cat5">
-		<span class="counter">0</span> clicks
-		<br>
-   		<img class="clicker" src="cat_picture5.jpeg">
-   	</div>
+  <main class="doc-container">
+    <header class="doc-topic">
+      <h1 class="topic-text">Cat Clicker Premium</h1>
+    </header>
+      <aside class="sidebar">
+        <header class="sidebar-topic">
+          <h2 class="sidebar-topic-text">Select Cat</h2>
+        </header>
+        <ul class="cat-menu"></ul>
+      </aside>
+      <section class="cat-render-area">
+        <fieldset class="cat-display-area">
+          <legend class="cat-clicks"></legend>
+          <h3 class="cat-display-name"></h3>
+          <div class="cat-container"></div>
+        </fieldset>
+      </section>
+    <footer class="doc-note">
+      <p>Grow with Google Scholarship - Udacity **2018**</p>
+    </footer>
+  </main>
 </body>
-</html>
 <script src="jquery.js"></script>
 <script src="app.js"></script>
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Rye|Peralta|Ubuntu+Mono|Concert+One');
+
+*,
+*:after,
+*:before: {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace, sans-serif, serif;
+  height: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style document header */
+
+.doc-topic {
+  border: 1px solid rgb(0, 0, 0);
+  grid-area: header;
+}
+
+.doc-topic .topic-text {
+  font-family: 'Rye', sans-serif, serif;
+  font-size: 4em;
+  text-align: center;
+  text-shadow: 2px 2px rgb(146, 148, 138);
+}
+
+/* style sidebar and its components */
+
+aside.sidebar {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 120px;
+  grid-area: menu;
+  text-align: center;
+}
+
+.sidebar-topic {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  text-shadow: 2px 2px rgb(146, 148, 138);
+}
+
+.sidebar-topic .sidebar-topic-text {
+  font-family: 'Concert One', monospace, sans-serif, serif;
+  font-size: 2.8em;
+  letter-spacing: 5px;
+  padding: 0;
+}
+
+.cat-menu {
+  list-style-type: none;
+  padding: 1em 0 0 0;
+}
+
+.cat-menu .cat-name {
+  display: block;
+  font-family: 'Peralta', sans-serif, serif;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 4px;
+  padding: 10px;
+  text-shadow: 2px 2px rgb(146, 148, 138);
+}
+
+.cat-menu .cat-name:hover {
+  background-color: rgb(63, 56, 66);
+  cursor: pointer;
+  color: rgb(237, 237, 237);
+  font-size: 2.85em;
+  text-decoration: underline;
+}
+
+/* style cat render area and its components */
+
+.cat-render-area {
+  grid-area: right;
+  display: block;
+}
+
+.cat-render-area .cat-display-area {
+  border-radius: 160px;
+  margin-top: 5%;
+  padding: 20px;
+}
+
+.cat-display-area .cat-clicks {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 80px;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1.9em;
+  font-weight: bold;
+  margin-left: 7em;
+  padding: 15px;
+  text-shadow: 1px 1px rgb(146, 148, 138);
+}
+
+.cat-display-area .cat-display-name {
+  font-family: 'Concert One', monospace, sans-serif, serif;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 2px 2px rgb(146, 148, 138);
+}
+
+.cat-display-area .cat-container {
+  text-align: center;
+}
+
+.cat-display-area .cat-container .cat-display-img {
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  width: 600px;
+  height: 400px;
+}
+
+/* style document footer */
+
+.doc-note {
+  border: 1px solid rgb(0, 0, 0);
+  grid-area: footer;
+}
+
+.doc-note p {
+  font-family: 'Orbitron', monospace, sans-serif, serif;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 1px 1px rgb(146, 148, 138);
+}
+
+/* style document layout */
+.doc-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 78.8% auto;
+  grid-template-areas:
+    'header header header header'
+    'menu right right right'
+    'footer footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+}
