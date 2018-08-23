@@ -100,7 +100,7 @@ $(() => {
       catView.catDisplayName.text(capsName);
       // display cat picture
       catView.catContainer.html(
-        `<img class="cat-display-img" id=\"${cat}\" src=\"${cat}.jpg\" alt=\"${cat} on display!\">`
+        `<img class="cat-display-img" id=\"${cat}\" src=\"img/${cat}.jpg\" alt=\"${cat} on display!\">`
       );
     }
   };
