@@ -48,6 +48,8 @@ $(() => {
     render: () => {
       // obtain cat list
       const catList = octopus.getCatList();
+      // empty cat menu
+      listView.menu.html('');
       // populate and display cat list
       for (const cat of catList) {
         const capsName = octopus.capitlizeCatName(cat);
@@ -79,11 +81,11 @@ $(() => {
         const TARGET = event.target.id,
           capsName = octopus.capitlizeCatName(TARGET);
         if (TARGET) {
-          // clear previous cliks
-          catView.clicks.text('');
           // increment clicks per click
           octopus.incrementCatClicks(TARGET);
           const catClicks = octopus.getCatClicks(TARGET);
+          // clear previous cliks
+          catView.clicks.text('');
           // update text showing clicks
           catView.clicks.text(
             `${capsName} clicks: ${catClicks}`
@@ -105,6 +107,8 @@ $(() => {
       catView.catDisplayName.text('');
       // display cat name
       catView.catDisplayName.text(capsName);
+      // empty cat contianer
+      catView.catContainer.html('');
       // display cat picture
       catView.catContainer.html(
         `<img class="cat-display-img" id=\"${cat}\" src=\"img/${cat}.jpg\" alt=\"${cat} on display!\">`
