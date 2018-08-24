@@ -7,7 +7,7 @@
 ---
 **Enjoy Clicking Cats**
 ---
-# [Go to Cat Clicker Premium](https://patel-jenu-1991.github.io/cat-clicker-mvo/index.html)
+# [Go to Cat Clicker Premium](https://patel-jenu-1991.github.io/cat-clicker-mvo/)
 
 # **_Wanna add more Cats?_**
 
