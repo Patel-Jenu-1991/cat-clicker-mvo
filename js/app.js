@@ -18,10 +18,11 @@ $(() => {
   };
 
   let listView = {
-    // select DOM elements to work with
-    menu: $('.cat-menu'),
+    menu: null,
     // list initalizer
     init: () => {
+      // select DOM elements to work with
+      listView.menu = $('.cat-menu');
       // render list
       listView.render();
       // handle clicks on list
@@ -58,12 +59,15 @@ $(() => {
   };
 
   let catView = {
-    // obtain DOM elements to work with
-    catContainer: $('.cat-container'),
-    clicks: $('.cat-clicks'),
-    catDisplayName: $('.cat-display-name'),
+    catContainer: null,
+    clicks: null,
+    catDisplayName: null,
     // catView initalizer
     init: () => {
+      // obtain DOM elements to work with
+      catView.catContainer = $('.cat-container');
+      catView.clicks = $('.cat-clicks');
+      catView.catDisplayName = $('.cat-display-name');
       catView.render();
       catView.handleClicks();
     },
