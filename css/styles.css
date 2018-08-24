@@ -75,6 +75,7 @@ body {
 }
 
 .cat-menu .cat-name:hover {
+  border: 8px ridge rgba(50, 127, 171, 0.88);
   background-color: rgb(63, 56, 66);
   cursor: pointer;
   color: rgb(237, 237, 237);
