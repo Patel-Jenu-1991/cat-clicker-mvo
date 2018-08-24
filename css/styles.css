@@ -93,8 +93,8 @@ body {
 .cat-render-area .cat-display-area {
   border-radius: 160px;
   box-shadow: 8px 16px 26px rgb(171, 175, 170);
-  margin-top: 5%;
-  padding: 20px;
+  margin-top: 5em;
+  padding: 16px;
 }
 
 .cat-display-area .cat-clicks {
@@ -133,7 +133,7 @@ body {
   border: 1px solid rgb(0, 0, 0);
   box-shadow: 2px 4px 6px rgb(171, 175, 170);
   grid-area: footer;
-  margin-top: 1em;
+  margin-top: 1.1em;
 }
 
 .doc-note .note-text {
