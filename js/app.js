@@ -2,6 +2,8 @@
 
 $(() => {
   let model = {
+    // define current cat
+    currentCat: null,
     // define cat names
     catList: ['bubbly', 'chewie', 'kathy', 'lyza', 'xuca'],
     // an empty object to hold clicks on each cat
@@ -31,8 +33,8 @@ $(() => {
         // detect cat
         const TARGET = event.target.dataset.cat;
         if (TARGET) {
-          // set displayCat to detected cat
-          octopus.displayCat = TARGET;
+          // set current cat to detected cat
+          octopus.setCurrentCat(TARGET);
           // render the target cat
           octopus.renderCat();
         } else {
@@ -90,7 +92,7 @@ $(() => {
     // render cat to display area
     render: () => {
       // obtain display cat and capitlize it's name
-      const cat = octopus.displayCat,
+      const cat = octopus.getCurrentCat(),
         capsName = octopus.capitlizeCatName(cat),
         catClicks = octopus.getCatClicks(cat);
       // set initial clicks text
@@ -107,8 +109,6 @@ $(() => {
   };
 
   let octopus = {
-    // set initial display cat
-    displayCat: model.catList[0],
     // function definition to capitlize cat names
     capitlizeCatName: name => {
       return `${name.charAt(0).toUpperCase()}${name.slice(1)}`;
@@ -116,6 +116,14 @@ $(() => {
     // function definition to obtain cat list
     getCatList: () => {
       return model.catList;
+    },
+    // function definition to retrieve current cat
+    getCurrentCat: () => {
+      return model.currentCat;
+    },
+    // function definition to set current cat
+    setCurrentCat: cat => {
+      model.currentCat = cat;
     },
     // function definition to obtain clicks on a cat
     getCatClicks: cat => {
@@ -136,6 +144,8 @@ $(() => {
     },
     // octopus initalizer
     init: () => {
+      // set initial current cat
+      model.currentCat = model.catList[0];
       // initialize model, listView, catView
       model.init();
       listView.init();
