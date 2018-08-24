@@ -90,9 +90,10 @@ $(() => {
     render: () => {
       // obtain display cat and capitlize it's name
       const cat = octopus.displayCat,
-        capsName = octopus.capitlizeCatName(cat);
+        capsName = octopus.capitlizeCatName(cat),
+        catClicks = octopus.getCatClicks(cat);
       // set initial clicks text
-      catView.clicks.text(`${capsName} clicks: ${octopus.getCatClicks(cat)}`);
+      catView.clicks.text(`${capsName} clicks: ${catClicks}`);
       // clear cat display name
       catView.catDisplayName.text('');
       // display cat name
