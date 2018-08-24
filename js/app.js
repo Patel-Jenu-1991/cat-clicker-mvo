@@ -47,10 +47,9 @@ $(() => {
       const catList = octopus.getCatList();
       // populate and display cat list
       for (const cat of catList) {
+        const capsName = octopus.capitlizeCatName(cat);
         listView.menu.append(
-          `<li class=\"cat-name\" data-cat=\"${cat}\">${octopus.capitlizeCatName(
-            cat
-          )}</li>`
+          `<li class=\"cat-name\" data-cat=\"${cat}\">${capsName}</li>`
         );
       }
     }
