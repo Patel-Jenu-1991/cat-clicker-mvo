@@ -77,9 +77,10 @@ $(() => {
           catView.clicks.text('');
           // increment clicks per click
           octopus.incrementCatClicks(TARGET);
+          const catClicks = octopus.getCatClicks(TARGET);
           // update text showing clicks
           catView.clicks.text(
-            `${capsName} clicks: ${octopus.getCatClicks(TARGET)}`
+            `${capsName} clicks: ${catClicks}`
           );
         } else {
           return;
