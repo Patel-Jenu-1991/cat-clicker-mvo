@@ -148,7 +148,7 @@ body {
 .doc-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto auto;
+  grid-auto-rows: auto;
   grid-template-areas:
     "header header header header"
     "menu right right right"
