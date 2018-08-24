@@ -25,6 +25,7 @@ body {
 
 .doc-topic {
   border: 1px solid rgb(0, 0, 0);
+  box-shadow: 4px 8px 12px rgb(171, 175, 170);
   grid-area: header;
   margin-bottom: 1em;
 }
@@ -38,9 +39,10 @@ body {
 
 /* style sidebar and its components */
 
-aside.sidebar {
+.sidebar {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 120px;
+  box-shadow: 6px 12px 18px rgb(171, 175, 170);
   grid-area: menu;
   text-align: center;
 }
@@ -89,6 +91,7 @@ aside.sidebar {
 
 .cat-render-area .cat-display-area {
   border-radius: 160px;
+  box-shadow: 8px 16px 26px rgb(171, 175, 170);
   margin-top: 5%;
   padding: 20px;
 }
@@ -127,6 +130,7 @@ aside.sidebar {
 
 .doc-note {
   border: 1px solid rgb(0, 0, 0);
+  box-shadow: 2px 4px 6px rgb(171, 175, 170);
   grid-area: footer;
   margin-top: 1em;
 }
