@@ -121,19 +121,14 @@ $(() => {
     getCatClicks: cat => {
       return model.catClicksCount[cat];
     },
-    // function definition to update clicks on a cat
-    updateCatClicks: (cat, clicks) => {
-      // update model
-      model.catClicksCount[cat] = clicks;
-    },
     // function definition to increment clicks on a cat
     incrementCatClicks: cat => {
       // obtain the existing count of clicks
       let clickCounter = octopus.getCatClicks(cat);
       // increment clicks
       clickCounter++;
-      // update clicks for the cat
-      octopus.updateCatClicks(cat, clickCounter);
+      // update model
+      model.catClicksCount[cat] = clickCounter;
     },
     // render the cat
     renderCat: () => {
