@@ -3,7 +3,7 @@
 $(() => {
   let model = {
     // define current cat
-    currentCat: null,
+    displayCat: null,
     // define cat names
     catList: ['bubbly', 'chewie', 'kathy', 'lyza', 'xuca'],
     // an empty object to hold clicks on each cat
@@ -34,7 +34,7 @@ $(() => {
         const TARGET = event.target.dataset.cat;
         if (TARGET) {
           // set current cat to detected cat
-          octopus.setCurrentCat(TARGET);
+          octopus.setDisplayCat(TARGET);
           // render the target cat
           octopus.renderCat();
         } else {
@@ -92,7 +92,7 @@ $(() => {
     // render cat to display area
     render: () => {
       // obtain display cat and capitlize it's name
-      const cat = octopus.getCurrentCat(),
+      const cat = octopus.getDisplayCat(),
         capsName = octopus.capitlizeCatName(cat),
         catClicks = octopus.getCatClicks(cat);
       // set initial clicks text
@@ -118,12 +118,12 @@ $(() => {
       return model.catList;
     },
     // function definition to retrieve current cat
-    getCurrentCat: () => {
-      return model.currentCat;
+    getDisplayCat: () => {
+      return model.displayCat;
     },
     // function definition to set current cat
-    setCurrentCat: cat => {
-      model.currentCat = cat;
+    setDisplayCat: cat => {
+      model.displayCat = cat;
     },
     // function definition to obtain clicks on a cat
     getCatClicks: cat => {
@@ -145,7 +145,7 @@ $(() => {
     // octopus initalizer
     init: () => {
       // set initial current cat
-      model.currentCat = model.catList[0];
+      model.displayCat = model.catList[0];
       // initialize model, listView, catView
       model.init();
       listView.init();
